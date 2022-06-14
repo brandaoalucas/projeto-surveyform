@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grupo-form">
+        <header class="header">
+            <h1 id="title">freeCode Camp Formulario De Pesquisa</h1>
+            <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+        </header>
+    </div>
+    <div class="container">
+        <main>
+            <div>
+                <form id="survey-form">
+                    <div class="grupo-form">
+                        <label for="name" id="name-label">
+                            Nome
+                        </label>
+                        <input type="text" name="name" id="name" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="grupo-form">
+                        <label for="email" id="email-label">
+                            Email
+                        </label>
+                        <input type="email" name="email" id="email" required placeholder="Digite seu email">
+                    </div>
+                    <div class="grupo-form">
+                        <label for="number" id="number-label">
+                            Idade
+                        </label>
+                        <input type="number" name="number" id="number" min="0" max="9" placeholder="Idade">
+                    </div>
+                    <div class="grupo-form">
+                        <p>Qual opção melhor descreve sua função atual ?</p>
+                        <select name="dropdown" id="dropdown">
+                            <option value="" disabled selected>Selecione uma opcao</option>
+                            <option value="estudante">Estudante</option>
+                            <option value="trabalhoIntegral">Trabalho em Tempo Integral</option>
+                            <option value="aprendizIntegral">Aprendiz em Tempo Integral</option>
+                            <option value="prefiroNaoDizer">Prefiro Nao Dizer</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="grupo-form">
+                        <p>Voce recomendaria freeCodeCamp para um amigo ?</p>
+                        <label>
+                            <input type="radio" name="recomendacao" id="definitivamente">
+                            Definitivamente
+                        </label>
+                        <label>
+                            <input type="radio" name="recomendacao" id="talvez">
+                            Talvez
+                        </label>
+                        <label>
+                            <input type="radio" name="recomendacao" id="naoSei">
+                            Nao Sei
+                        </label>
+                    </div>
+                    <div class="grupo-form">
+                        <p>Qual sua caracterista favorita do freeCodeCamp ?</p>
+                        <select name="caracteristicaFavorita" id="caracteristicaFavorita" class="controle-formulario" required>
+                            <option disabled selected value>Selecione uma opcao</option>
+                            <option value="desafos">Desafios</option>
+                            <option value="projetos">Projetos</option>
+                            <option value="comunidade">Comunidade</option>
+                            <option value="codigoAberto">Codigo Aberto</option>
+                        </select>
+                    </div>
+                    <div class="grupo-form">
+                        <label>
+                            <input type="checkbox" name="melhorias" id="frontEnd">
+                            Projetos Front-End
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="backEnd">
+                            Projetos Back-End
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="visualizacaoDados">
+                            Visualizacao de Dados
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="desafios">
+                            Desafios
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="comunidadeCodAberto">
+                            Comunidade de Codigo Aberto
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="gitterHelp">
+                            Salas de Ajuda Gitter
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="videos">
+                            Videos
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="cityMeetups">
+                            Encontros nas Cidades
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="wiki">
+                            Wiki
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="forum">
+                            Forum
+                        </label>
+                        <label>
+                            <input type="checkbox" name="melhorias" id="cursosAdicionais">
+                            Cursos Adicionais
+                        </label>
+                    </div>
+                    <div class="grupo-form">
+                        <p>Alguma sugestao ou comentario ?</p>
+                        <textarea name="areaTexto" id="areaTexto" cols="55" rows="5"></textarea>
+                    </div>
+                    <button type="submit" id="submit" class="botao-enviar">Enviar</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
